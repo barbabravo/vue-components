@@ -1,0 +1,55 @@
+{
+  "author": "",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "lodash": "^4.14.1",
+    "vue": "^1.0.26"
+  },
+  "description": "``` npm install && npm start ```",
+  "devDependencies": {
+    "babel-core": "^6.9.0",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "css-loader": "^0.23.1",
+    "cz-conventional-changelog": "^1.1.6",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.21.0",
+    "image-webpack-loader": "^1.8.0",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "open-browser-webpack-plugin": "0.0.2",
+    "rollup-loader": "0.0.2",
+    "rollup-plugin-babel": "^2.6.1",
+    "style-loader": "^0.13.1",
+    "vue-hot-reload-api": "^1.3.3",
+    "vue-html-loader": "^1.2.3",
+    "vue-loader": "^8.5.3",
+    "vue-style-loader": "^1.0.0",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-hot-middleware": "^2.12.2"
+  },
+  "gitHead": "eb2fd18e7068e6b384ad82bb0896399eb423628d",
+  "license": "ISC",
+  "main": "index.js",
+  "name": "vue-components",
+  "optionalDependencies": {},
+  "readme": "# 查看demo\n```\nnpm install && npm start\n```",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git@git.2b6.me:vue-components/vue-select.git"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --hot --inline --host 0.0.0.0 --port 9999",
+    "build": "webpack --production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}

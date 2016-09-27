@@ -54,8 +54,9 @@ export default {
       var self = this;
       if (this.page != dest_page && dest_page > 0 && dest_page <= this.total_page) {
         console.log(dest_page);
-        this.$dispatch('change-page', dest_page)
+        this.$dispatch('on-change', dest_page)
         //为了兼容老版本
+        this.$dispatch('change-page', dest_page)
         this.$dispatch('changePageTo', dest_page)
       }
     }
@@ -67,14 +68,12 @@ export default {
 @page-color:#3f9f5f;
 @anti-color:#333;
 
-.pagination {
-  display: block;
-  padding-left: 0;
-  margin: 20px 0;
-  border-radius: 4px; 
-}
-.pagination > li {
-  display: inline; 
+.pagination{
+  margin:0;
+  padding:0;
+  li{
+    float:left;
+  }
 }
 
 .page-prefix,
@@ -85,10 +84,9 @@ export default {
   margin-left:10px;
 }
 
-
 .pagination > li > a, .pagination > li > span {
   position: relative;
-  float: left;
+  float:left;
   padding: 6px 12px;
   margin-left: -1px;
   line-height: 1.42857143;
@@ -118,5 +116,4 @@ export default {
   color:@anti-color;
   cursor:pointer;
 }
-
 </style>
